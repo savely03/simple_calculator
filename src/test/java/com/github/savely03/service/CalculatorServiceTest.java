@@ -44,7 +44,7 @@ class CalculatorServiceTest {
     }
 
     @Test
-    void invokeAndCalculateTestWhenDivideOnZeroExceptionTest() {
+    void invokeAndCalculateWhenDivideOnZeroExceptionTest() {
         Data data = generateData("5", "0", "div");
 
         assertThatExceptionOfType(DivideOnZeroException.class).isThrownBy(
